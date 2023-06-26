@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="assets/css/login-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Expletus+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="img-container">
+            <h1>y/dev</h1>
+        </div>
+        <div class="login-container">
+            <form class="form">
+                <h2>Login</h2>
+                <div id="msgError"></div>
+                <div class="input-container">
+                    <input type="text" id="user" placeholder="" required>
+                    <label id="userLabel" for="user">User</label>
+                </div>
+
+                <div class="input-container">
+                    <input type="password" id="password" placeholder="" required>
+                    <label id="passwordLabel" for="password">Password</label>
+                    <i id="showPassword"  class="fa-solid fa-eye"></i>
+                </div>
+
+                <div class="button-container">
+                    <button onclick="entrar(event)">Sign</button>
+                    <a href="register.html">Sign Up</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="assets/js/login.js"></script>
+</body>
+</html>
